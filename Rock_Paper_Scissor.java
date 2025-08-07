@@ -18,6 +18,7 @@ public class Rock_Paper_Scissor {
          !playerChoice.equals("paper") && 
          !playerChoice.equals("scissors")){
             System.out.println("Invalid Choice!");
+            continue;
          }
 
       computerChoice = choices[random.nextInt(3)];
@@ -39,7 +40,8 @@ public class Rock_Paper_Scissor {
       System.out.println("Play again (yes/no): ");
       playAgain = sc.nextLine().toLowerCase();
       } while (playAgain.equals("yes"));
-
+       System.out.println("Thanks for Playing");
       sc.close();
   }  
 }
+
